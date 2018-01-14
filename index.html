@@ -1,14 +1,343 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Tailwind Starter Template</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./dist/styles.css">
-  </head>
-  <body>
-    <div class="min-h-screen flex items-center justify-center">
-      <h1 class="text-5xl text-purple font-sans">Greetings.</h1>
+    <link rel="stylesheet" href="/dist/styles.css">
+    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/2b5fbcd6-a160-4a5e-b2df-75ecfffd8ede.css" />
+</head>
+
+<body class="antialiased">
+    <div class="py-16 bg-cover bg-hero">
+        <div class="container mx-auto px-4">
+            <div class="mb-16 sm:mb-32">
+                <div class="flex justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 88 63" width="88" height="63">
+                        <defs>
+                            <path id="b" d="M750.55 97.33c1.29 1.56 8.61 10.77 9.14 11.36.53.6.4 1.08-.58 1.35l-10.9 2.92c3.22 4.34 9.38 12.63 9.9 13.4.72 1.06.07 1.37-.98 1.8-1.05.44-24.4 8.87-26 9.36-2.05.62-2.96.93-4.3-.93-.99-1.4-6.38-11.15-9.02-15.95-5 1.31-14.15 3.71-16.78 4.35-2.58.62-3.68-.93-4.1-1.89-.43-.95-15.6-33.8-16.55-36.05-.96-2.26.09-2.69 1.04-2.77.95-.08 14.32-1.2 16.06-1.27 1.75-.08 1.9.32 2.67 1.46l19.26 32.34 24.22-5.83c-1.34-1.9-7.43-10.58-8.02-11.4-.66-.94.01-1.37 1.09-1.55 1.08-.19 10.34-1.75 11.14-1.86.8-.12 1.42-.4 2.71 1.16zm4.87 10.77c.53-.12.93-.3.7-.6-.23-.3-6.36-8.1-6.81-8.7-.45-.62-.76-.52-1.13-.44-.36.08-8.42 1.54-8.91 1.61-.5.07-.34.35-.14.63l7.1 9.77s8.66-2.16 9.2-2.27zm-1.51 16.83c-.22-.34-7.62-10.48-8.01-11.06-.3-.42-.46-.5-1.15-.28l-23.61 6.17s7.25 12.6 7.8 13.4c.56.82.9.75 1.33.57.44-.19 22.71-7.74 23.4-7.99.67-.25.46-.46.24-.8zm-38.24-7.2c.62-.14.47-.22.16-.76l-18.08-31.35c-.16-.28-.12-.38-.56-.35-.45.02-13.05 1.15-13.26 1.15-.2 0-.22.33 0 .75.23.41 16.27 33.64 16.35 33.89.09.25.09.33.8.16.73-.16 14.3-3.42 14.59-3.49z"></path>
+                            <filter id="a" width="117.5%" height="125.5%" x="-8.8%" y="-9.1%" filterUnits="objectBoundingBox">
+                                <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"></feGaussianBlur>
+                                <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.209890172 0"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd" transform="translate(-676 -81)">
+                            <use fill="black" filter="url(#a)" xlink:href="#b"></use>
+                            <use fill="#FFFFFF" xlink:href="#b"></use>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text-xl sm:text-3xl md:text-4xl text-green-lightest font-futura-bold uppercase text-center tracking-wide">Coming October 2018</div>
+                <h1 class="text-6xl sm:text-7xl md:text-8xl text-white font-trade uppercase text-center leading-none">Laracon AU</h1>
+                <div class="text-xl sm:text-3xl md:text-4xl text-green-lightest font-futura-bold uppercase text-center tracking-wide mb-16">Sydney, Australia</div>
+                <div class="flex justify-center">
+                    <form class="w-full max-w-sm">
+                        <div class="flex items-center text-base md:text-lg">
+                            <input class="shadow appearance-none w-full py-4 md:py-6 px-6 text-grey-darker font-futura-book" id="username" type="text" placeholder="Enter your email">
+                            <button class="flex-no-shrink shadow bg-yellow-gradient text-black-warm font-futura-bold py-4 md:py-6 px-6 md:px-8 uppercase tracking-wide">
+                                Notify me
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-2xl text-white font-futura-bold uppercase text-center tracking-wide mb-12">Featuring talks from</div>
+            <div class="flex flex-wrap bg-grey-lighter justify-center">
+                <div class="w-full flex justify-center sm:w-1/2 lg:w-1/3 p-2 mb-12">
+                    <div class="flex items-center">
+                        <div class="z-10 circle mr-8">
+                            <div class="z-20 w-16 h-16 md:w-24 md:h-24 overflow-hidden rounded-full">
+                                <img class="greyscale" src="https://pbs.twimg.com/profile_images/914894066072113152/pWD-GUwG_400x400.jpg" />
+                            </div>
+                        </div>
+                        <div class="text-left flex-grow">
+                            <p class="text-base md:text-xl leading-tight text-white font-futura-bold mb-2">Taylor Otwell</p>
+                            <p class="text-base md:text-xl leading-tight text-green-lighter font-futura-book">@taylorotwell</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center sm:w-1/2 lg:w-1/3 p-2 mb-12">
+                    <div class="flex items-center">
+                        <div class="z-10 circle mr-8">
+                            <div class="z-20 w-16 h-16 md:w-24 md:h-24 overflow-hidden rounded-full">
+                                <img class="greyscale" src="https://pbs.twimg.com/profile_images/914894066072113152/pWD-GUwG_400x400.jpg" />
+                            </div>
+                        </div>
+                        <div class="text-left flex-grow">
+                            <p class="text-base md:text-xl leading-tight text-white font-futura-bold mb-2">Taylor Otwell</p>
+                            <p class="text-base md:text-xl leading-tight text-green-lighter font-futura-book">@taylorotwell</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center sm:w-1/2 lg:w-1/3 p-2 mb-12">
+                    <div class="flex items-center">
+                        <div class="z-10 circle mr-8">
+                            <div class="z-20 w-16 h-16 md:w-24 md:h-24 overflow-hidden rounded-full">
+                                <img class="greyscale" src="https://pbs.twimg.com/profile_images/914894066072113152/pWD-GUwG_400x400.jpg" />
+                            </div>
+                        </div>
+                        <div class="text-left flex-grow">
+                            <p class="text-base md:text-xl leading-tight text-white font-futura-bold mb-2">Taylor Otwell</p>
+                            <p class="text-base md:text-xl leading-tight text-green-lighter font-futura-book">@taylorotwell</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center sm:w-1/2 lg:w-1/3 p-2 mb-12">
+                    <div class="flex items-center">
+                        <div class="z-10 circle mr-8">
+                            <div class="z-20 w-16 h-16 md:w-24 md:h-24 overflow-hidden rounded-full">
+                                <img class="greyscale" src="https://pbs.twimg.com/profile_images/914894066072113152/pWD-GUwG_400x400.jpg" />
+                            </div>
+                        </div>
+                        <div class="text-left flex-grow">
+                            <p class="text-base md:text-xl leading-tight text-white font-futura-bold mb-2">Taylor Otwell</p>
+                            <p class="text-base md:text-xl leading-tight text-green-lighter font-futura-book">@taylorotwell</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center sm:w-1/2 lg:w-1/3 p-2 mb-12">
+                    <div class="flex items-center">
+                        <div class="z-10 circle mr-8">
+                            <div class="z-20 w-16 h-16 md:w-24 md:h-24 overflow-hidden rounded-full">
+                                <img class="greyscale" src="https://pbs.twimg.com/profile_images/914894066072113152/pWD-GUwG_400x400.jpg" />
+                            </div>
+                        </div>
+                        <div class="text-left flex-grow">
+                            <p class="text-base md:text-xl leading-tight text-white font-futura-bold mb-2">Taylor Otwell</p>
+                            <p class="text-base md:text-xl leading-tight text-green-lighter font-futura-book">@taylorotwell</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center sm:w-1/2 lg:w-1/3 p-2 mb-12">
+                    <div class="flex items-center">
+                        <div class="z-10 circle mr-8">
+                            <div class="z-20 w-16 h-16 md:w-24 md:h-24 overflow-hidden rounded-full">
+                                <img class="greyscale" src="https://pbs.twimg.com/profile_images/914894066072113152/pWD-GUwG_400x400.jpg" />
+                            </div>
+                        </div>
+                        <div class="text-left flex-grow">
+                            <p class="text-base md:text-xl leading-tight text-white font-futura-bold mb-2">Taylor Otwell</p>
+                            <p class="text-base md:text-xl leading-tight text-green-lighter font-futura-book">@taylorotwell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+    </div>
+    <div class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl text-black font-futura-bold uppercase text-left tracking-wide mb-8">The Venue</h2>
+            <div class="block md:flex">
+                <div class="w-full md:w-1/2 md:pr-6 mb-8">
+                    <img src="/src/img/venue.jpg">
+                </div>
+                <div class="w-full md:w-1/2 md:pl-6">
+                    <div class="font-futura-book text-base md:text-xl text-grey-darkest leading-loose border-t-2 border-black pt-6">
+                        <p class="mb-6">
+                            <span class="font-futura-bold uppercase text-sm md:text-lg text-black tracking-wide">Monkey Baa is Australia’s leading</span> professional theatre company for young audiences, situated a few minutes’ walk from Darling Harbour.
+                        </p>
+                        <p class="mb-6">
+                            We believe Australian stages should be filled with stories that represent all the extraordinary cultures living in this land, and that it’s important to create work that offers young people a truly multifaceted reflection of the world we all inhabit.
+                        </p>
+                        <a href="/" class="font-futura-bold uppercase text-lg md:text-xl text-green tracking-wide no-underline hover:underline">Visit the website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-green py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl text-white font-futura-bold uppercase text-left tracking-wide mb-8">Schedule</h2>
+            <div class="block lg:flex">
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0 lg:pr-6">
+                  <div class="font-futura-book text-xl md:text-2xl mb-6 text-white">October 30</div>
+                    <ul class="border-t-2 border-green-light list-reset">
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">9:00 AM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">10:00 AM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">10:45 AM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">11:30 AM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">12:15 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">2:00 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">2:45 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">3:30 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">3:45 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">4:30 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">5:15 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">7:00 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full lg:w-1/2 lg:pl-6">
+                  <div class="font-futura-book text-xl md:text-2xl mb-6 text-white">October 30</div>
+                    <ul class="border-t-2 border-green-light list-reset">
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">9:00 AM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">10:00 AM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">10:45 AM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">11:30 AM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">12:15 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">2:00 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">2:45 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">3:30 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">3:45 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">4:30 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">5:15 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                        <li class="py-4 md:py-6 border-b border-green-light flex items-baseline">
+                            <div class="font-futura-bold uppercase text-white text-base md:text-xl w-24 md:w-28 flex-none">7:00 PM</div>
+                            <svg class="w-12 md:w-16 flex-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+                                <circle cx="496" cy="2034" r="4" fill="none" stroke="#1D2222" stroke-width="4" transform="translate(-490 -2028)"></circle>
+                            </svg>
+                            <div class="font-futura-book text-white text-base md:text-xl flex-1">TBA</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black py-8 md:py-16">
+      <div class="container mx-auto px-4">
+      <div class="text-2xl md:text-3xl text-green-lightest font-futura-bold uppercase text-center tracking-wide leading-normal">Come back real soon for more updates</div>
+    </div>
+    </div>
+</body>
+
 </html>
